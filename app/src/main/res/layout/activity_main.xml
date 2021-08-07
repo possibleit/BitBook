@@ -15,7 +15,10 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:src="@drawable/ic_homepage_list"
-            android:layout_alignParentLeft="true" />
+            android:layout_alignParentLeft="true"
+            android:id="@+id/list_menu"
+            android:clickable="true"
+            android:focusable="true" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -28,16 +31,20 @@
                 android:layout_gravity="center"
                 android:textSize="14sp"
                 android:text="@string/novel"
+                android:id="@+id/novel"
                 android:background="@drawable/tab_border_left"
-                android:padding="3dp"/>
+                android:paddingRight="3dp"
+                android:paddingLeft="5dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textSize="14sp"
                 android:text="@string/paint"
+                android:id="@+id/paint"
                 android:background="@drawable/tab_border_right"
-                android:padding="3dp"/>
+                android:paddingRight="3dp"
+                android:paddingLeft="5dp"/>
         </LinearLayout>
 
         <ImageView
